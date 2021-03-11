@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+	<title>FixPC Computer Servises</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/slideshow.css" />
+	<link
+		rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Poppins"
+	/>
+	<script src="./js/slideshow.js" defer></script>
+
+	<style>
+		body,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			font-family: "Poppins", sans-serif;
+		}
+
+		body {
+			font-size: 16px;
+		}
+
+		.w3-half img {
+			margin-bottom: -6px;
+			margin-top: 16px;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+
+		.w3-half img:hover {
+			opacity: 1;
+		}
+	</style>
+
+	<body>
+		<!-- Sidebar/menu -->
+		<nav
+			class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
+			style="z-index: 3; width: 300px; font-weight: bold"
+			id="mySidebar"
+		>
+			<br />
+			<a
+				href="javascript:void(0)"
+				onclick="w3_close()"
+				class="w3-button w3-hide-large w3-display-topleft"
+				style="width: 100%; font-size: 22px"
+				>X</a
+			>
+			<div class="w3-container">
+				<div class="w3-padding-64 bar-header">
+					<h1 style="font-weight: bold; font-size: 2.3rem">FiXPC</h1>
+					<p>
+						"25 χρόνια δυναμικό παρών παρέχοντας υπηρεσίες και
+						προϊόντα υψηλής ποιότητας"
+					</p>
+				</div>
+			</div>
+			<div class="w3-bar-block">
+				<a
+					href="#"
+					onclick="w3_close()"
+					class="w3-bar-item w3-button w3-hover-white"
+					>Αρχική</a
+				>
+				<a
+					href="#services"
+					onclick="w3_close()"
+					class="w3-bar-item w3-button w3-hover-white"
+					>Υπηρεσίες</a
+				>
+				<a
+					href="#computers"
+					onclick="w3_close()"
+					class="w3-bar-item w3-button w3-hover-white"
+					>Υπολογιστές</a
+				>
+				<a
+					href="#products"
+					onclick="w3_close()"
+					class="w3-bar-item w3-button w3-hover-white"
+					>Προϊόντα</a
+				>
+				<a
+					href="#about"
+					onclick="w3_close()"
+					class="w3-bar-item w3-button w3-hover-white"
+					>Ποιοι Είμαστε</a
+				>
+				<a
+					href="#contact"
+					onclick="w3_close()"
+					class="w3-bar-item w3-button w3-hover-white"
+					>Επικοινωνία</a
+				>
+			</div>
+		</nav>
+
+		<!-- Top menu on small screens -->
+		<header
+			class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding"
+		>
+			<a
+				href="javascript:void(0)"
+				class="w3-button w3-red w3-margin-right"
+				onclick="w3_open()"
+				>☰</a
+			>
+			<span>FiXPC</span>
+		</header>
+
+		<!-- Overlay effect when opening sidebar on small screens -->
+		<div
+			class="w3-overlay w3-hide-large"
+			onclick="w3_close()"
+			style="cursor: pointer"
+			title="close side menu"
+			id="myOverlay"
+		></div>
+
+		<!-- !PAGE CONTENT! -->
+		<div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+			<!-- Header -->
+			<div class="w3-container header" id="showcase">
+				<div style="max-width: 400px">
+					<img
+						src="./images/fixpc-logo2.png"
+						style="width: 100%"
+						alt=""
+					/>
+				</div>
+				<h1 class="white">
+					<b>The best click on services.</b>
+				</h1>
+				<hr
+					style="width: 50px; border: 5px solid white"
+					class="w3-round"
+				/>
+			</div>
+
+			<!-- Slideshow -->
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="images/store8.jpg" style="width: 100%" />
+				</div>
+
+				<div class="mySlides fade">
+					<img src="images/store8.jpg" style="width: 100%" />
+				</div>
+
+				<div class="mySlides fade">
+					<img src="images/store8.jpg" style="width: 100%" />
+				</div>
+			</div>
+			<br />
+
+			<div style="text-align: center">
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+
+			<!-- Services -->
+			<div class="w3-container" id="services" style="margin-top: 75px">
+				<div class="title">
+					<h1 class="red"><b>Υπηρεσίες.</b></h1>
+					<hr
+						style="width: 50px; border: 5px solid red"
+						class="w3-round"
+					/>
+				</div>
+				<div class="service">
+					<img src="images/icon1.png" alt="" />
+					<h2>Επισκευές συστημάτων και περιφερειακών</h2>
+					<p>
+						Συντηρούμε και επισκευάζουμε ηλεκτρονικούς υπολογιστές,
+						εκτυπωτές, οθόνες, ηχεία, σταθεροποιητές τάσης.
+					</p>
+				</div>
+				<div class="service">
+					<img src="images/icon2.png" alt="" />
+					<h2>Ανάκτηση δεδομένων</h2>
+					<p>
+						Αναλαμβάνουμε την επαναφορά δεδομένων (Data Recovery) σε
+						περίπτωση απώλειάς τους, από οποιοδήποτε αποθηκευτικό
+						μέσο.
+					</p>
+				</div>
+				<div class="service">
+					<img src="images/icon3.png" alt="" />
+					<h2>Ασφάλεια Η/Υ και δικτύων</h2>
+					<p>
+						Παρέχουμε τις πλέον αποτελεσματικές λύσεις προστασίας
+						Η/Υ και δικτύων, εξασφαλίζοντας την ασφάλειά τους με
+						ισχυρά εργαλεία Software και Hardware Firewall
+						(Antivirus, Anti-Spam, Anti-Hacking, Web και URL
+						Filtering, Network Access).
+					</p>
+				</div>
+				<div class="service">
+					<img src="images/icon4.png" alt="" />
+					<h2>Προστασία δεδομένων</h2>
+					<p>
+						Διαθέτουμε αξιόπιστες λύσεις (NAS Servers) για την
+						ασφαλή αποθήκευση των δεδομένων σας. Εφαρμόζουμε
+						πρακτικές για τη δημιουργία αντιγράφων ασφαλείας που
+						καλύπτουν κάθε απαίτηση με το χαμηλότερο δυνατό κόστος.
+					</p>
+				</div>
+				<div class="service">
+					<img src="images/icon5.png" alt="" />
+					<h2>Δίκτυα</h2>
+					<p>
+						Σχεδιάζουμε και υλοποιούμε εγκαταστάσεις δομημένης
+						καλωδίωσης και τερματισμών. Εγκαθιστούμε και
+						υποστηρίζουμε ενσύρματα και ασύρματα δίκτυα.
+					</p>
+				</div>
+				<div class="service">
+					<img src="images/icon6.png" alt="" />
+					<h2>Κατασκευή ιστοσελίδων</h2>
+					<p>
+						Στην FiXPC κατασκευάζουμε τη νέα σας ιστοσελίδα
+						μελετώντας τις ανάγκες σας, προσφέροντας μοναδική
+						διαδικτυακή εμπειρία σε κάθε πελάτη σας.
+					</p>
+				</div>
+			</div>
+
+			<!-- Designers -->
+			<div class="w3-container" id="computers" style="margin-top: 75px">
+				<h1 class="red"><b>Υπολογιστές.</b></h1>
+				<hr
+					style="width: 50px; border: 5px solid red"
+					class="w3-round"
+				/>
+				<p>Ηλεκτρονικοί υπολογιστές από την FiXPC.</p>
+				<p>Η καλύτερη επιλογή σας!</p>
+				<div id="computers-image-large">
+					<img src="./images/simeia-iperoxis-large.jpg" alt="" />
+				</div>
+				<div id="computers-image-medium">
+					<img src="./images/simeia-iperoxis-medium.png" alt="" />
+				</div>
+				<div id="computers-image-small">
+					<img src="./images/simeia-iperoxis-small.png" alt="" />
+				</div>
+			</div>
+
+			<!-- Packages / Pricing Tables -->
+			<div class="w3-container" id="products" style="margin-top: 75px">
+				<div class="title">
+					<h1 class="red"><b>Προϊόντα.</b></h1>
+					<hr
+						style="width: 50px; border: 5px solid red"
+						class="w3-round"
+					/>
+				</div>
+				<div class="products-text">
+					<p>
+						Συνεργαζόμαστε με τις κορυφαίες εταιρείες διάθεσης
+						ηλεκτρονικών υπολογιστών, περιφερειακών και αναλώσιμων
+						υλικών. Συνθέτουμε εξειδικευμένες μονάδες ηλεκτρονικών
+						υπολογιστών σύμφωνα με τις ανάγκες του κάθε πελάτη.
+						Επιλέγουμε και διαθέτουμε μεταχειρισμένους Η/Υ
+						(Refurbished), με εγγύηση καλής λειτουργίας. Σχεδιάζουμε
+						και υλοποιούμε NAS Server και Hardware Firewall.
+					</p>
+				</div>
+				<div class="products-image">
+					<img
+						src="./images/five_icons.png"
+						alt=""
+						style="width: 80%; margin: 0 auto"
+					/>
+				</div>
+			</div>
+
+			<!-- Packages / Pricing Tables -->
+			<div class="w3-container" id="about" style="margin-top: 75px">
+				<div class="title">
+					<h1 class="red">
+						<b>Ποιοι είμαστε.</b>
+					</h1>
+					<hr
+						style="width: 50px; border: 5px solid red"
+						class="w3-round"
+					/>
+				</div>
+				<div class="about-text">
+					<p>
+						Στην FiXPC έχουμε δημιουργήσει μια ευέλικτη και ισχυρή
+						ομάδα που έχει σαν στόχο τη σχεδίαση και διάθεση στην
+						αγορά πρωτοποριακών προϊόντων τεχνολογίας αλλά και την
+						πώληση ειδών πληροφορικής (ηλεκτρονικούς υπολογιστές,
+						περιφερειακά, αναλώσιμα, αξεσουάρ, servers, firewalls,
+						NAS, υλικά δικτύων), όπως και την παροχή ολοκληρωμένων
+						υπηρεσιών πληροφορικής (επισκευές ηλεκτρονικών
+						υπολογιστών και περιφερειακών, αναβαθμίσεις συστημάτων,
+						ασφάλεια Η/Υ και εταιρικών δικτύων, προστασία και
+						επαναφορά δεδομένων, υλοποιήσεις δικτύων και
+						εκπαίδευση). Τα 25 και πλέον έτη εμπειρίας που διαθέτουν
+						τα στελέχη μας στον τομέα του κλάδου Τεχνολογιών
+						Πληροφορικής και Ηλεκτρονικών σε συνδυασμό με την
+						επαγγελματική τους αρτιότητα, εγγυώνται την άριστη
+						ποιότητα των προϊόντων και υπηρεσιών που προσφέρουμε
+						στους πελάτες μας. Στην FiXPC φροντίζουμε να είμαστε
+						συνεχώς ενήμεροι σχετικά με τις ταχύτατες εξελίξεις της
+						τεχνολογίας, ώστε να ανταποκρινόμαστε με τον αμεσότερο
+						και αποδοτικότερο τρόπο στις αυξημένες απαιτήσεις των
+						πελατών μας και το αποτέλεσμα των υπηρεσιών μας να είναι
+						πάντοτε το καλύτερο. Πάγια τακτική μας είναι να
+						αντιμετωπίζουμε τις ανάγκες του κάθε πελάτη μας, με
+						υπευθυνότητα και να προτείνουμε σε κάθε περίπτωση την
+						πιο συμφέρουσα και ικανοποιητική γι'αυτόν λύση που να
+						εξυπηρετεί τις πραγματικές του ανάγκες. Απόδειξη της
+						άριστης εξυπηρέτησης που προσφέρουμε στους πελάτες μας,
+						αποτελεί το γεγονός ότι μας εμπιστεύονται μέχρι σήμερα
+						χιλιάδες επιχειρήσεις και ιδιώτες.
+					</p>
+				</div>
+				<div class="about-image">
+					<img src="./images/diesi.png" alt="" />
+				</div>
+			</div>
+
+			<!-- Contact -->
+			<div class="w3-container" id="contact" style="margin-top: 75px">
+				<div class="title">
+					<h1 class="red"><b>Επικοινωνία.</b></h1>
+					<hr
+						style="width: 50px; border: 5px solid red"
+						class="w3-round"
+					/>
+				</div>
+				<div class="contact-form">
+					<form action="">
+						<div class="w3-section">
+							<label>Όνομα</label>
+							<input
+								class="w3-input w3-border"
+								type="text"
+								name="Name"
+								required
+							/>
+						</div>
+						<div class="w3-section">
+							<label>Email</label>
+							<input
+								class="w3-input w3-border"
+								type="text"
+								name="Email"
+								required
+							/>
+						</div>
+						<div class="w3-section">
+							<label>Μήνυμα</label>
+							<input
+								class="w3-input w3-border"
+								type="text"
+								name="Message"
+								required
+							/>
+						</div>
+						<button
+							type="submit"
+							class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom"
+						>
+							Αποστολή μηνύματος
+						</button>
+					</form>
+				</div>
+				<div class="contact-details">
+						<p>
+							<b>FiXPC Computer Services</b><br />
+							Όθωνος 4, 151 22 Μαρούσι<br />
+							(πλησίον ηλεκτρικού σταθμού ΗΣΑΠ) <br />Τηλ: 210
+							6120569 - Κιν: 6979755524<br />
+							Email: info@fixpc.gr<br />
+						</p>
+						<p>
+							Ωράριο λειτουργίας:<br />
+							Δευτέρα, Τετάρτη, Σάββατο: 9:00 - 15:00<br />
+							Τρίτη, Πέμπτη, Παρασκευή: 9:00 - 20:00<br />
+						</p>
+						<p>
+							Υπεύθυνος επικοινωνίας:<br />
+							Γιώργος Ευθυμιάδης
+						</p>
+				</div>
+				<div class="contact-map">
+					<img src="./images/map2.jpg" alt="" />
+				</div>
+			</div>
+
+			<!-- End page content -->
+		</div>
+
+		<!-- W3.CSS Container -->
+		<div
+			class="w3-light-grey w3-container w3-padding-32"
+			style="margin-top: 75px; padding-right: 58px"
+		>
+			<p class="w3-right">2021 FiXPC Computer Services</p>
+		</div>
+
+		<script>
+			// Script to open and close sidebar
+			function w3_open() {
+				document.getElementById("mySidebar").style.display = "block";
+				document.getElementById("myOverlay").style.display = "block";
+			}
+
+			function w3_close() {
+				document.getElementById("mySidebar").style.display = "none";
+				document.getElementById("myOverlay").style.display = "none";
+			}
+		</script>
+	</body>
+</html>
